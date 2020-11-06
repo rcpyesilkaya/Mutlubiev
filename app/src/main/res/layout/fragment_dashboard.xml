@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingClass">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".ui.DashboardFragment">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBarHome"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ivLogo"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/mutlubiev2" />
+
+                    <ImageView
+                        android:id="@+id/ivRightButton"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="64dp"
+                        android:src="@drawable/ic_notifications" />
+                </androidx.appcompat.widget.Toolbar>
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="296dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="32dp"
+                android:elevation="5dp"
+                android:lineSpacingExtra="4sp"
+                android:text="@string/info"
+                android:textAlignment="center"
+                android:textColor="@color/purple_200"
+                android:textIsSelectable="false"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appBarHome" />
+
+            <ImageView
+                android:id="@+id/ratingBar"
+                android:layout_width="80dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="48dp"
+                android:elevation="5dp"
+                android:src="@drawable/star"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="48dp"
+                android:elevation="5dp"
+                android:text="@string/customerCount"
+                android:textAlignment="center"
+                android:textColor="@color/purple_700"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+            <Button
+                android:id="@+id/pbHomeCleaning"
+                style="@style/AppTheme.RoundedCornerMaterialButton"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="48dp"
+                android:elevation="5dp"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="@string/homeClean"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+            <ImageView
+                android:id="@+id/ivBackground"
+                android:layout_width="match_parent"
+                android:layout_height="274dp"
+                android:background="@drawable/mutlubiev_image"
+                android:elevation="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appBarHome" />
+
+            <TextView
+                android:id="@+id/productCategoryTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/services"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pbHomeCleaning" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvNanoServices"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productCategoryTitle">
+
+                <ImageView
+                    android:id="@+id/ivProductNano"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/nano" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvProductTitleNano"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/productTitleNano"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvNanoServices" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvHomeServices"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintStart_toEndOf="@+id/cvNanoServices"
+                app:layout_constraintTop_toBottomOf="@+id/productCategoryTitle">
+
+                <ImageView
+                    android:id="@+id/ivProductHome"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/house_cleaning" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvProductTitleHome"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/productTitleHome"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/cvNanoServices"
+                app:layout_constraintTop_toBottomOf="@+id/cvHomeServices" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvHomeServicesHalf"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintStart_toEndOf="@+id/cvHomeServices"
+                app:layout_constraintTop_toBottomOf="@+id/productCategoryTitle">
+
+                <ImageView
+                    android:id="@+id/ivProductHomeHalf"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/half_day_house_cleaning" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvProductTitleHomeHalf"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/productTitleHomeHalf"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/cvHomeServices"
+                app:layout_constraintTop_toBottomOf="@+id/cvHomeServicesHalf" />
+
+            <TextView
+                android:id="@+id/easyStepBannerLayoutTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/easyStepBannerLayoutTitle"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvProductTitleHomeHalf" />
+
+            <com.yarolegovich.discretescrollview.DiscreteScrollView
+                android:id="@+id/itemPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="42dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/easyStepBannerLayoutTitle"
+                tools:listitem="@layout/item_card" />
+
+            <TextView
+                android:id="@+id/tvRelativeTeamTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/relativeTeamTitle"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/itemPicker" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvFriendsFavoriPersonel"
+                android:layout_width="328dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="42dp"
+                android:padding="16dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/appBarHome"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvRelativeTeamTitle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivBanner"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/friends_banner" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="8dp">
+
+                        <TextView
+                            android:id="@+id/tvDescriptionFriend"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/descriptionFriend" />
+
+                        <Button
+                            android:id="@+id/pbFindRelativeTeam"
+                            style="@style/AppTheme.RoundedCornerMaterialButton"
+                            android:layout_width="143dp"
+                            android:layout_height="54dp"
+                            android:layout_marginTop="32dp"
+                            android:text="@string/findRelativeTeam" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/whyCleanzyLayoutTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/whyCleanzyLayoutTitle"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvFriendsFavoriPersonel" />
+
+            <com.yarolegovich.discretescrollview.DiscreteScrollView
+                android:id="@+id/itemPicker2"
+                android:layout_width="wrap_content"
+                android:layout_height="175dp"
+                android:layout_marginEnd="42dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/whyCleanzyLayoutTitle"
+                tools:listitem="@layout/item_card" />
+
+
+            <TextView
+                android:id="@+id/campaignLayoutTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/campaignLayoutTitle"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/itemPicker2" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCampaign"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginBottom="64dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/campaignLayoutTitle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

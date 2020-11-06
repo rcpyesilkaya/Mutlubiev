@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">mutlubiev</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ev_temizligi">Ev Temizliği</string>
+    <string name="info">Evinin İhtiyaçları İçin Güvenilir Temizlik Profesyoneli Bul!</string>
+    <string name="customerCount">159798 Mutlu Müşteri</string>
+    <string name="homeClean">Ev Temizliği</string>
+    <string name="services">Hizmetler</string>
+    <string name="productTitleNano">Nano Dezenfeksiyon</string>
+    <string name="productTitleHomeHalf">Yarım Gün Ev Temizliği</string>
+    <string name="productTitleHome">Ev Temizliği</string>
+    <string name="easyStepBannerLayoutTitle">3 Adımda Kolay Temizlik</string>
+    <string name="descriptionFriend">Arkadaşlarının memnun kaldığı Temizlik Profesyoneli\'nden sen de hizmet almak ister misin? tek yapman gereken aşağıdaki butona tıklamak.</string>
+    <string name="findRelativeTeam">TIKLA, ÖĞREN</string>
+    <string name="relativeTeamTitle">Arkadaşlarının favori profesyonelini gör!</string>
+    <string name="whyCleanzyLayoutTitle">Neden Mutlubiev?</string>
+    <string name="campaignLayoutTitle">Kampanyalar</string>
+    <string name="cityDistrictTitle">İl - İlçe</string>
+    <string name="calendarTitle">Tarih Seçin</string>
+    <string name="tomorrow">06.11.2020 Cuma</string>
+    <string name="otherDay">07.11.2020 Cumartesi</string>
+    <string name="calendarSelect">Tarih Seçin</string>
+    <string name="titleHouseSize">Ev Büyüklüğü</string>
+    <string name="titleOftenClean">Hangi Sıklıkla Temizlik İstersin?</string>
+    <string name="weekOne">Haftada Bir</string>
+    <string name="weekTwo">İki Haftada Bir</string>
+    <string name="weekJustOne">Tek Sefer</string>
+    <string name="titleAdditionalServices">Ek Hizmetler</string>
+    <string name="subProductTitle">Virüs ve bakterilere karşı etkinliği kanıtlanmış nano dezenfeksiyon hizmetini temizlikle birlikte %50 indirimli almak ister misin? (profesyonel dezenfeksiyon ekibi yönlendirilecektir)</string>
+    <string name="no">Hayır, teşekkürler</string>
+    <string name="yes">Evet(175,00 TL)</string>
+    <string name="cat">Kedi</string>
+    <string name="other">Diğer</string>
+    <string name="titleAnimal">Evcil Hayvanın var mı?</string>
+    <string name="titleCleaningEquipment">Temizlik Malzemelerini Getirelim mi ?</string>
+    <string name="materialYes">Evet istiyorum (25,00 TL)</string>
+    <string name="materialNo">Hayır istemiyorum</string>
+    <string name="comeToHomeYes">Evde Olacağım</string>
+    <string name="comeToHomeNo">Anahtarı Şuraya Bırakacağım</string>
+    <string name="titleComeToHome">Profesyonelin Evine Nasıl Girebilir ?</string>
+    <string name="titleNote">Profesyonele Notun var mı?</string>
+    <string name="note">Yazdığın notlar direkt olarak temizlik profesyonelleri tarafından okunuyor. Tercih ettiğin bir temizlik profesyoneli varsa düzenli hizmetlerde seçimini sonraki sayfada belirtebilirsin.</string>
+    <string name="sum">Toplam</string>
+    <string name="countine">Devam Et</string>
+</resources>
